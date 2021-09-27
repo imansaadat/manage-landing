@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style -->
+    <link rel="stylesheet" href="assets/styles/base/base.css" />
+    <link rel="stylesheet" href="assets/styles/page/styles.css" />
+    <title>manage landing</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <nav class="main_nav">
+          <div class="logo flex">
+            <img src="assets/images/logo.svg" alt="logo" />
+          </div>
+          <ul class="list_items">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+          <div class="btn">
+            <a href="">Get Started</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- main page -->
+    <main class="main_page">
+      <!-- intro -->
+      <section class="intro">
+        <div class="intro__bg"></div>
+        <div class="container">
+          <div class="intro__content flex">
+            <div class="intro__text">
+              <h1>Bring everyone together to bulid better products</h1>
+              <p class="subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                sint eligendi, totam voluptate rem in explicabo modi delectus.
+              </p>
+              <div class="btn">
+                <a href="">Get Started</a>
+              </div>
+            </div>
+            <div class="intro__image">
+              <img src="assets/images/illustration-intro.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Abotu Manage -->
+      <section class="manage">
+        <div class="container">
+          <div class="manage__content flex">
+            <div class="manage__left">
+              <h2>What's different about Manage?</h2>
+              <p class="subtitle">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Perferendis aspernatur accusamus quia repellendus ab commodi
+                eveniet vitae facere voluptate minima?
+              </p>
+            </div>
+            <div class="manage__right">
+              <div class="item flex">
+                <div class="item_number">
+                  <span>01</span>
+                </div>
+                <div class="item_content">
+                  <h3>Track company-wide progress</h3>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi nam minus officiis velit explicabo non suscipit rem
+                    voluptatem libero aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="item flex">
+                <div class="item_number"><span>02</span></div>
+                <div class="item_content">
+                  <h3>Advanced built-in reports</h3>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi nam minus officiis velit explicabo non suscipit rem
+                    voluptatem libero aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="item flex">
+                <div class="item_number"><span>03</span></div>
+                <div class="item_content">
+                  <h3>Everything you need in one place</h3>
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi nam minus officiis velit explicabo non suscipit rem
+                    voluptatem libero aliquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector(".header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

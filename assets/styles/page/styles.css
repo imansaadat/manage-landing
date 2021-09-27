@@ -1,0 +1,86 @@
+/* header */
+.header {
+  padding: 2rem 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.header.sticky {
+  background-color: #fff;
+}
+.header .main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .main_nav .list_items {
+  display: flex;
+}
+.header .main_nav .list_items li {
+  margin: 0 3rem;
+}
+
+/* intro */
+.intro {
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+}
+.intro__bg {
+  width: 62vw;
+  height: 32vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff0eb;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translate(25%, 5%) rotate(140deg);
+}
+.intro__content {
+  align-items: center;
+}
+.intro__text {
+  flex: 0 0 50%;
+  padding-right: 10rem;
+}
+.intro__text h1 {
+  margin-bottom: 1.5rem;
+}
+.intro__text .subtitle {
+  margin-bottom: 2rem;
+}
+.intro__image {
+  flex: 0 0 50%;
+}
+
+/* About manage */
+.manage__left {
+  padding-right: 10rem;
+  flex: 0 0 50%;
+}
+.manage__left h2 {
+  margin-bottom: 2rem;
+}
+.manage__right {
+  flex: 0 0 50%;
+}
+.manage__right .item {
+  margin-bottom: 4rem;
+}
+.manage__right .item .item_number {
+  padding-right: 2rem;
+}
+.manage__right .item .item_number span {
+  width: 5rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #F3613C;
+  color: #fff;
+  vertical-align: -1rem;
+}/*# sourceMappingURL=styles.css.map */

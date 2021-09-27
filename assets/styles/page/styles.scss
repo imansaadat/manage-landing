@@ -1,0 +1,94 @@
+@use '../_sass/variable'as*;
+
+/* header */
+.header {
+  padding: 2rem 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  &.sticky{
+      background-color: #fff;
+  }
+  .main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    .list_items {
+      display: flex;
+      li {
+        margin: 0 3rem;
+      }
+    }
+  }
+}
+
+/* intro */
+.intro {
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+  &__bg {
+    width: 62vw;
+    height: 32vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff0eb;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(25%, 5%) rotate(140deg);
+  }
+  &__content {
+    align-items: center;
+  }
+  &__text {
+    flex: 0 0 50%;
+    padding-right: 10rem;
+    h1{
+        margin-bottom: 1.5rem;
+    }
+    .subtitle{
+        margin-bottom: 2rem;
+    }
+  }
+  &__image {
+    flex: 0 0 50%;
+  }
+}
+
+
+/* About manage */ 
+
+.manage{
+    &__left{
+        padding-right: 10rem;
+        flex: 0 0 50%;
+        h2{
+            margin-bottom:2rem;
+        }
+    }
+
+    &__right{
+        flex: 0 0 50%;
+        .item{
+            margin-bottom: 4rem;
+            .item_number{
+                padding-right: 2rem;
+                span{   
+                    width: 5rem;
+                    height: 3rem;  
+                    line-height: 3rem;
+                    text-align: center;    
+                    display: inline-block;
+                    border-radius: 2.5rem;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    background-color: $bg_btn;
+                    color: #fff;
+                    vertical-align: -1rem;
+                }
+            }
+        }
+    }
+}
