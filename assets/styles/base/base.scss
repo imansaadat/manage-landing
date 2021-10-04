@@ -6,7 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .3s ease-in-out;
+}
+
+::selection{
+    color: $Title_color;
 }
 
 html{
@@ -47,13 +50,18 @@ ul{
         padding: 1rem 2rem;
         border-radius: 2.5rem;
         background-color: $bg_btn;
-        &.light{
-            background-color: #fff;
-            color:$bg_btn;
-        }
+        transition: .3s;
         &:hover{
             box-shadow: 0 2px 6px #ee532c;
         }
+        &.light{
+            background-color: #fff;
+            color:$bg_btn;
+            &:hover{
+                opacity: .9;
+            }
+        }
+        
     }
 }
 
@@ -66,7 +74,7 @@ img{
 }
 
 .subtitle{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: $Text_color;
     font-weight: 400;
     line-height: 2.5rem;
@@ -84,4 +92,8 @@ h2{
 
 h3{
     font-size: 1.8rem;
+}
+
+.center{
+    text-align: center;
 }
