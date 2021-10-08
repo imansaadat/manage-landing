@@ -2,8 +2,7 @@
 
 /* header */
 .header {
-  -webkit-position: sticky;
-  -moz-position: sticky;
+  position: -webkit-sticky;
   position: sticky;
   padding: 2rem 0;
   width: 100%;
