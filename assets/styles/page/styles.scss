@@ -284,6 +284,7 @@
         flex-direction: column;
         backdrop-filter: blur(12px);
         transition: .3s ease-in-out;
+        z-index: 1000;
         li {
           margin: 1rem 0;
           a {
