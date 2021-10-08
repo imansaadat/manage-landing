@@ -8,11 +8,11 @@
 }
 
 ::-moz-selection {
-  color: #232C50;
+  color: #232c50;
 }
 
 ::selection {
-  color: #232C50;
+  color: #232c50;
 }
 
 html {
@@ -33,7 +33,7 @@ body {
 a {
   font-size: 1.7rem;
   text-decoration: none;
-  color: #232C50;
+  color: #232c50;
   font-weight: 500;
 }
 a:hover {
@@ -51,7 +51,7 @@ ul {
   font-size: 1.7rem;
   padding: 1rem 2rem;
   border-radius: 2.5rem;
-  background-color: #F3613C;
+  background-color: #f3613c;
   transition: 0.3s;
 }
 .btn a:hover {
@@ -59,7 +59,7 @@ ul {
 }
 .btn a.light {
   background-color: #fff;
-  color: #F3613C;
+  color: #f3613c;
 }
 .btn a.light:hover {
   opacity: 0.9;
@@ -81,7 +81,7 @@ img {
 }
 
 h1, h2, h3 {
-  color: #232C50;
+  color: #232c50;
   font-size: 4rem;
   font-weight: 600;
 }

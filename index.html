@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="auto">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,6 +31,9 @@
             <li><a href="#">Careers</a></li>
             <li><a href="#">Community</a></li>
           </ul>
+          <div class="hamburger_menu">
+            <i class="fas fa-bars"></i>
+          </div>
           <div class="btn">
             <a href="">Get Started</a>
           </div>
@@ -41,9 +44,6 @@
     <main class="main_page">
       <!-- intro -->
        <section class="intro">
-        <div class="intro__bg">      
-<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="#FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>
-        </div>
         <div class="container">
           <div class="intro__content flex">
             <div class="intro__text">
@@ -211,17 +211,19 @@
                    <a href="#"><i class="fab fa-youtube"></i></i></a>
                </div>
             </div> 
-               <ul class="list_item">
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">Pricing</a></li>
-                 <li><a href="#">products</a></li>
-                 <li><a href="#">About Us</a></li>
-               </ul>
-               <ul class="list_item">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+            <div class="links flex">
+              <ul class="list_item">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">About Us</a></li>
               </ul>
+              <ul class="list_item">
+               <li><a href="#">Careers</a></li>
+               <li><a href="#">Community</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+             </ul>
+            </div>
               <div class="form">
                 <form action="#">
                    <div class="field_block">
@@ -236,42 +238,7 @@
         </div>
       </div>
     </footer>
-    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".statements_slider", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop:true,
-        grabCursor:true,
-        centeredSlides:true,
-        autoplay:{
-          delay:6000,
-          disableOnInteraction:false,
-        },
-        breakpoints:{
-          0:{
-            slidesPerView:1,
-          },
-          768:{
-            slidesPerView:2,
-          },
-          991:{
-            slidesPerView:3,
-          }
-        }
-      });
-    </script>
-    <script>
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector(".header");
-        if(window.scrollY > 0){
-          header.classList.add('sticky')
-        }
-        else{
-          header.classList.remove('sticky')
-        }
-      });
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
