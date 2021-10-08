@@ -297,6 +297,9 @@
       }
       .hamburger_menu {
         display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2.2rem;
         z-index: 1000;
         i {
           transition: .3s ease-in-out 150ms;

@@ -276,6 +276,9 @@
   }
   .header .main_nav .hamburger_menu {
     display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.2rem;
     z-index: 1000;
   }
   .header .main_nav .hamburger_menu i {
