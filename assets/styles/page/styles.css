@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* header */
 .header {
   position: sticky;
@@ -23,6 +22,16 @@
 }
 .header .main_nav .list_items li {
   margin: 0 3rem;
+}
+.header .main_nav .list_items .close {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+}
+.header .main_nav .list_items .close i {
+  color: #fff;
+  font-size: 2.8rem;
 }
 .header .main_nav .hamburger_menu {
   display: none;
@@ -274,22 +283,11 @@
   .header .main_nav .list_items.show {
     top: 0;
   }
+  .header .main_nav .list_items.show .close {
+    display: block;
+  }
   .header .main_nav .hamburger_menu {
     display: block;
-    position: fixed;
-    top: 1.5rem;
-    right: 2.2rem;
-    z-index: 1000;
-  }
-  .header .main_nav .hamburger_menu i {
-    transition: 0.3s ease-in-out 150ms;
-  }
-  .header .main_nav .hamburger_menu i.show {
-    transition: 0.3s ease-in-out;
-    color: #fff;
-  }
-  .header .main_nav .hamburger_menu i.show::before {
-    content: "";
   }
 
   .intro::after {

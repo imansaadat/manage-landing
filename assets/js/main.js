@@ -35,7 +35,11 @@
 //header responsive
   let listItems = document.querySelector('.list_items')
   let menu = document.querySelector('.fa-bars')
+  let close = document.querySelector('.fa-times')
   menu.addEventListener('click',()=>{
     listItems.classList.toggle('show')
-    menu.classList.toggle('show')
   })
+  close.addEventListener('click',()=>{
+    listItems.classList.remove('show')
+  })
+

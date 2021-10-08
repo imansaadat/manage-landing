@@ -22,6 +22,16 @@
       li {
         margin: 0 3rem;
       }
+      .close{
+        display: none;
+        position: absolute;
+        top: 1rem;
+        right: 2.5rem;
+        i{
+          color: #fff;
+          font-size: 2.8rem;
+        }
+      }
     }
     .hamburger_menu {
       display: none;
@@ -293,24 +303,13 @@
         }
         &.show {
           top: 0;
+          .close{
+            display: block;
+          }
         }
       }
       .hamburger_menu {
         display: block;
-        position: fixed;
-        top: 1.5rem;
-        right: 2.2rem;
-        z-index: 1000;
-        i {
-          transition: .3s ease-in-out 150ms;
-          &.show {
-            transition: .3s ease-in-out;
-            color: #fff;
-            &::before {
-              content: "\f00d";
-            }
-          }
-        }
       }
     }
   }
